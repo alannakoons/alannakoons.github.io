@@ -187,6 +187,27 @@
       </div>
       <div class="container-fluid">
           <div class="row">
+              <div class="col-xs-12" id="introduction">
+                  <h3 class="home visible-xs"><span class="boxed-in">Home</span></h3>
+                  <h1>Graphic Design Projects</h1>
+                  <div class="col-sm-6 col-sm-offset-3 hidden-xs">
+                  <blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                      </p>
+                        <footer>
+                            Someone famous in 
+                            <cite title="Source Title">
+                                Source Title
+                            </cite>
+                      </footer>
+                  </blockquote>
+                      </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid">
+          <div class="row">
               <div class="col-md-2 visible-lg fixed-bar" id="myScrollspy">
                   <div data-spy="affix" data-offset-top="280">
                       
@@ -1573,6 +1594,9 @@
                         </div>
                       </div>
                   </div>
+
+                  
+                  
                   <div class="row" id="contact" style="min-height: 100vh;">
                       <div class="col-md-8 col-md-offset-2" style="padding-top: 5vh;">
                           <h2>
@@ -1581,14 +1605,14 @@
                           <p>
                               Submit a comment below, and I will email you back as soon as possible. I look forward to hearing from you!
                           </p>
-                      </div>
+                      </div>                      
                       <div class="col-md-6 col-md-offset-3">
-                          <form name="sentMessage" id="contactForm" novalidate="">
+                          <form name="sentMessage" id="contactForm" novalidate="" action="//formspree.io/joey.koons@gmail.com" method="POST">
                               <div class="row">
                                   <div class="col-lg-12">
                                       <p class="text-muted">Your Email</p>
                                       <div class="form-group">
-                                          <input type="email" class="form-control" placeholder="john@email.com" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                          <input type="email" class="form-control" placeholder="john@email.com" id="email" required="" data-validation-required-message="Please enter your email address." name="_replyto">
                                           <p class="help-block text-danger">
                                           </p>
                                       </div>
@@ -1596,7 +1620,7 @@
                                   <div class="col-lg-12">
                                       <p class="text-muted">Your Comment</p>
                                       <div class="form-group">
-                                          <textarea class="form-control" placeholder="Hello Joey!" id="message" required="" data-validation-required-message="Please enter a message.">
+                                          <textarea class="form-control" placeholder="Hello Joey!" id="message" required="" data-validation-required-message="Please enter a message." name="message" style="min-height: 30vh;">
                                           </textarea>
                                           <p class="help-block text-danger">
                                           </p>
@@ -1604,6 +1628,8 @@
                                   </div>
                                   <div class="clearfix">
                                   </div>
+                                  <input type="text" name="_gotcha" style="display:none" />
+                                  <input type="hidden" name="_next" value="https://alannakoons.github.io" />
                                   <div class="col-lg-12 text-center">
                                       <div id="success">
                                       </div>
