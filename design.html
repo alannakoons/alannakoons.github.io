@@ -160,7 +160,7 @@
         padding-right: 3vw;
         }
         }
-    </style>        
+    </style>      
   </head>
 
   <body data-spy="scroll" data-target="#myScrollspy" data-offset="0">
@@ -191,7 +191,7 @@
                   <div data-spy="affix" data-offset-top="280">
                       
                       <ul class="nav nav-pills nav-stacked">
-                          <li class="active"><a href="#"><h2>Alanna<br>Koons</h2></a></li>
+                          <li class="active"><a href=""><h2>Alanna<br>Koons</h2></a></li>
                           <li class="active"><a href="#"><h3>Art</h3></a></li>
                           <li><a href="#"><h4>Introduction</h4></a></li>
                           <li><a href="#"><h4>Portfolio</h4></a></li>
@@ -1586,37 +1586,35 @@
                           </p>
                       </div>                      
                       <div class="col-md-6 col-md-offset-3">
-                          <form name="sentMessage" id="contactForm" novalidate="" action="//formspree.io/joey.koons@gmail.com" method="POST">
-                              <div class="row">
-                                  <div class="col-lg-12">
-                                      <p class="text-muted">Your Email</p>
-                                      <div class="form-group">
-                                          <input type="email" class="form-control" placeholder="john@email.com" id="email" required="" data-validation-required-message="Please enter your email address." name="_replyto">
-                                          <p class="help-block text-danger">
-                                          </p>
-                                      </div>
-                                  </div>
-                                  <div class="col-lg-12">
-                                      <p class="text-muted">Your Comment</p>
-                                      <div class="form-group">
-                                          <textarea class="form-control" placeholder="Hello Joey!" id="message" required="" data-validation-required-message="Please enter a message." name="message" style="min-height: 30vh;">
-                                          </textarea>
-                                          <p class="help-block text-danger">
-                                          </p>
-                                      </div>
-                                  </div>
-                                  <div class="clearfix">
-                                  </div>
-                                  <input type="text" name="_gotcha" style="display:none" />
-                                  <input type="hidden" name="_next" value="https://alannakoons.github.io" />
-                                  <div class="col-lg-12 text-center">
-                                      <div id="success">
-                                      </div>
-                                      <button type="submit" class="btn btn-xl">
-                                          Send Message
-                                      </button>
-                                  </div>
+                          <form role="form" action="http://formspree.io/joey.koons@gmail.com">
+                              <input type="hidden" name="_next" value="https://alannakoons.github.io/" />
+                              <input type="hidden" name="_subject" value="Alanna got a form submission!" />
+                              <input type="text" name="_gotcha" style="display:none" />
+                              <div class="form-group">
+                                  <label for="InputName">
+                                      <span class="text-muted">
+                                          Your Name
+                                      </span>
+                                  </label>
+                                  <input type="text" class="form-control" name="name" id="InputName" placeholder="Johnny McJohnface" required>
                               </div>
+                              <div class="form-group">
+                                  <label for="InputEmail">
+                                      <span class="text-muted">
+                                          Your Email
+                                      </span>
+                                  </label>
+                                  <input type="email" class="form-control" id="InputEmail" name="_replyto" placeholder="johnny@email.com" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="InputMessage">
+                                      <span class="text-muted">
+                                          Your Message
+                                      </span>
+                                  </label>
+                                  <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Type your comment here!" required></textarea>
+                              </div>
+                              <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
                           </form>
                       </div>
                   </div>
