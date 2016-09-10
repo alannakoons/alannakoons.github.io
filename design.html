@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
+    <link href="../stylesheets/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,142 +33,19 @@
      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        .affix {
-        top: 20px;
-        }
-        .clickable{
-            margin: 0 auto;
-            -o-transition:.3s;
-            -ms-transition:.3s;
-            -moz-transition:.3s;
-            -webkit-transition:.3s;
-            transition:.5s;
-        }
-        .clickable:hover{
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            margin: -10px auto 10px auto;
-            cursor: pointer;
-        }
-        body{
-        padding: 0px;
-        position: relative;
-        background-color: #009688;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        }
-        .container-fluid{
-        max-width: 1400px;
-        margin: 0 auto;
-        background-color: #eee;
-        }
-        #introduction{
-            min-height: 300px;
-        }
-        #introduction h3{
-        padding-left: 3vh;
-        }
-        #introduction h1{
-        text-align: center;
-            padding-top: 12vh;
-        }
-        .boxed-in{
-        border: solid rgba(0,0,0,0.8);
-        color: rgba(0,0,0,0.8);
-        padding: 3px;
-        margin: auto;
-        -o-transition:.3s;
-        -ms-transition:.3s;
-        -moz-transition:.3s;
-        -webkit-transition:.3s;
-        transition:.5s;
-        }
-        .boxed-in:hover{
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        cursor: pointer;
-        background-color: white;
-        border: solid rgba(0,0,0,1.0);
-        color: rgba(0,0,0,1.0);
-        }
-        .fixed-bar{
-        padding-left: 3vw;
-        }
-        #portfolio{
-        background-color: #009688;
-        }
-        #portfolio .col-xs-6{
-        padding: 0px;
-        margin: 0px;
-        }
-        #portfolio .col-xs-12{
-        padding: 0px;
-        margin: 0px;
-        background-color: #eeeeee;
-        }
-        .piece-title{
-        border: solid 0px;
-        }
-        .modal-body .img-responsive{
-        margin-bottom: 10px;
-        }
-        .big-x{
-        font-size: 40px;
-        }
-        .modal-body h4{
-        text-align: center;
-        }
-        .home{
-        position: fixed;
-        z-index: 1;
-        }
-        .nav-pills>li.active>a{
-        background-color: rgba(255,255,255,0.0);
-        border-radius: 0px;
-        padding-left: 3px;
-        border-left: solid 2px black;
-        color: black;
-        -o-transition:.3s;
-        -ms-transition:.3s;
-        -moz-transition:.3s;
-        -webkit-transition:.3s;
-        transition:.1s;
-        }
-        .nav-pills>li.active>a:hover{
-        background-color: rgba(255,255,255,0.0);
-        border-radius: 0px;
-        border-left: solid 2px black;
-        color: black;
-        }
-        .nav-pills>li>a{
-        color: rgba(0,0,0,0.7);
-        -o-transition:.3s;
-        -ms-transition:.3s;
-        -moz-transition:.3s;
-        -webkit-transition:.3s;
-        transition:.5s;
-        }
-        .nav-pills>li>a:hover{
-        color: rgba(0,0,0,1.0)
-        }
-        .nav-pills>li>a {
-        padding: 1px;
-        }
-        .row{
-        margin-top: -2px;
-        }
-        
-        @media (min-width: 769px){
-        #portfolio .col-xs-12{
-        padding-right: 3vw;
-        }
-        }
-    </style>      
   </head>
 
   <body data-spy="scroll" data-target="#myScrollspy" data-offset="0">
       <div class="container-fluid">
           <div class="row">
               <div class="col-xs-12" id="introduction">
-                  <h3 class="home visible-xs"><span class="boxed-in">Home</span></h3>
+                  <a href="/">
+                  <h3 class="home visible-xs">
+                    <span class="boxed-in">
+                      Home
+                    </span>
+                  </h3>
+                </a>
                   <h1>Graphic Design Projects</h1>
                   <div class="col-sm-6 col-sm-offset-3 hidden-xs">
                   <blockquote>
