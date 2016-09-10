@@ -1,0 +1,187 @@
+.affix {
+    top: 20px;
+}
+.clickable{
+    margin: 0 auto;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.5s;
+}
+.clickable:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: -10px auto 10px auto;
+    cursor: pointer;
+}
+body{
+    padding: 0px;
+    position: relative;
+    background-color: #009688;
+}
+.container-fluid{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+#introduction{
+    min-height: 300px;
+}
+#introduction h3{
+    padding-left: 3vh;
+}
+#introduction h1{
+    text-align: center;
+    padding-top: 12vh;
+}
+.boxed-in{
+    border: solid rgba(0,0,0,0.8);
+    color: rgba(0,0,0,0.8);
+    padding: 3px;
+    margin: auto;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.5s;
+}
+.boxed-in:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    background-color: white;
+    border: solid rgba(0,0,0,1.0);
+    color: rgba(0,0,0,1.0);
+}
+.fixed-bar{
+    padding-left: 3vw;
+}
+#portfolio{
+    background-color: #eeeeee;
+}
+#portfolio .col-xs-6{
+    padding: 0px;
+    margin: 0px;
+}
+#portfolio .col-xs-12{
+    padding: 0px;
+    margin: 0px;
+    background-color: #eeeeee;
+}
+.piece-title{
+    border: solid 0px;
+}
+.modal-body .img-responsive{
+    margin-bottom: 10px;
+}
+.big-x{
+    font-size: 40px;
+    padding-right: 20px;
+}
+.modal-body h4{
+    text-align: center;
+}
+.home{
+    position: fixed;
+    z-index: 1;
+}
+.nav-pills>li.active>a{
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 0px;
+    padding-left: 3px;
+    border-left: solid 2px black;
+    color: black;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.1s;
+}
+.nav-pills>li.active>a:hover{
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 0px;
+    border-left: solid 2px black;
+    color: black;
+}
+.nav-pills>li>a{
+    color: rgba(0,0,0,0.7);
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.5s;
+}
+.nav-pills>li>a:hover{
+    color: rgba(0,0,0,1.0)
+}
+.nav-pills>li>a {
+    padding: 1px;
+}
+.row{
+    margin-top: -2px;
+}    
+.modal-body .img-responsive{
+    margin: 0 auto;
+    max-height: 70vh;
+    cursor: zoom-in;
+}
+.home-card{
+    height: 100vh;
+    text-align: center;
+    padding-top: 40vh;
+}
+.art-card{
+    background-image:url("http://alannakoons.com/images/layered-specimen.jpg");
+    background-size: cover;
+    background-size:100%;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:2s;
+}
+.art-card:hover{
+    background-size:110%;
+     -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:2s;
+}
+.art-card h2{
+color: black;
+}   
+.design-card{
+    background-image: url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285");
+    background-size: cover;
+    background-size:200%;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:2s;
+}
+.design-card:hover{
+    background-size:210%;
+     -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:2s;
+}
+.design-card h2{
+color: white;
+}   
+@media (min-width: 769px){
+    .portfolio-row{
+        padding-right: 3vw;
+    }
+}
+@media (max-width: 767px){
+    .img-responsive{
+        padding: 7px 15px 7px 15px;    
+    }
+    .home-card{
+        height: 50vh;
+        padding-top: 22vh;
+    }
+}
