@@ -185,3 +185,43 @@ color: white;
         padding-top: 22vh;
     }
 }
+
+@media (max-width: 990px){
+            body {
+                padding-top: 50px;
+            }
+            header {
+                background: white;
+                height: 52px;
+                position: fixed;
+                top: 0;
+                transition: top 0.3s ease-in-out;
+                width: 100%;
+            }
+            .nav-up {
+                top: -50px;
+            }
+            .nav-down {
+                z-index: 1;
+                margin: -1px;
+                width: 101vw;
+            }
+            .nav-down .row {
+                padding: 9px;
+            }
+            .nav-down a{
+                color: #333;
+            }
+            .nav-down h4 {
+                text-align: center;
+                padding: 0px;
+            }
+            .nav-down .current {
+                color: #333;
+                min-height: 40px;
+                border-bottom: 3px solid #009688;
+            }
+          }
+          .container-fluid {
+              padding: 0px;
+          }
