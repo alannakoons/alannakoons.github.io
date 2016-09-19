@@ -34,6 +34,10 @@ body{
     text-align: center;
     padding-top: 12vh;
 }
+.blockquote{
+    padding-bottom: 12vh;
+}
+}
 .boxed-in{
     border: solid rgba(0,0,0,0.8);
     color: rgba(0,0,0,0.8);
