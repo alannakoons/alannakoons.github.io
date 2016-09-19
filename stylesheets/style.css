@@ -61,7 +61,6 @@ blockquote{
 }
 #portfolio{
     background-color: #eeeeee;
-    margin-right: 0px;
 }
 #portfolio .col-xs-6{
     padding: 0px;
@@ -176,6 +175,9 @@ color: white;
     .portfolio-row{
         padding-right: 3vw;
     }
+    #portfolio{
+    margin-right: 0px;
+}
 }
 @media (max-width: 767px){
     .img-responsive{
