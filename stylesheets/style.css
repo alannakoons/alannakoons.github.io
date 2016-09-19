@@ -185,10 +185,10 @@ color: white;
         padding-top: 22vh;
     }
     #contact{
-        padding: auto 10vw auto 10vw;
+        padding: 0vh 10vw 0vh 10vw;
     }
     .portfolio-row{
-        padding: auto 5vw auto 5vw;
+        padding: 0vh 5vw 0vh 5vw;
     }
 }
 
