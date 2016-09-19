@@ -61,6 +61,7 @@ blockquote{
 }
 #portfolio{
     background-color: #eeeeee;
+    margin-right: 0px;
 }
 #portfolio .col-xs-6{
     padding: 0px;
