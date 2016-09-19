@@ -184,6 +184,12 @@ color: white;
         height: 50vh;
         padding-top: 22vh;
     }
+    #contact{
+        padding: auto 10vw auto 10vw;
+    }
+    .portfolio-row{
+        padding: auto 5vw auto 5vw;
+    }
 }
 
 @media (max-width: 990px){
