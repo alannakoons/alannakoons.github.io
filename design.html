@@ -13,13 +13,13 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/style.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../stylesheets/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
-    <link href="../stylesheets/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -33,6 +33,7 @@
      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         
   </head>
 
   <body data-spy="scroll" data-target="#myScrollspy" data-offset="0">
@@ -71,6 +72,20 @@
                     </div>
                 </div>
             </header>
+            <div class="row">
+              <div class="col-xs-12" id="introduction">
+                  <h1>Drawings</h1>
+                  <div class="col-sm-8 col-sm-offset-2">
+                  <blockquote>
+                    <p>
+                      Lorem Ipsum. 
+                      </p>
+                  </blockquote>
+                      </div>
+              </div>
+          </div>
+              </div>
+          </div>
       </div>
       <div class="container-fluid">
           <div class="row">
@@ -78,12 +93,12 @@
                   <div data-spy="affix" data-offset-top="280">
                       
                       <ul class="nav nav-pills nav-stacked">
-                          <li class="active"><a href=""><h2>Alanna<br>Koons</h2></a></li>
-                          <li class="active"><a href="#"><h3>Art</h3></a></li>
-                          <li><a href="#"><h4>Introduction</h4></a></li>
-                          <li><a href="#"><h4>Portfolio</h4></a></li>
+                          <li class="active"><a href="https://alannakoons.github.io"><h2>Alanna<br>Koons</h2></a></li>
+                          <li class="active"><a href="#design"><h3>Art</h3></a></li>
+                          <li><a href="https://alannakoons.github.io/art#introduction"><h4>Introduction</h4></a></li>
+                          <li><a href="https://alannakoons.github.io/art#portfolio"><h4>Portfolio</h4></a></li>
                           <br>
-                          <li class="active"><a href="#design"><h3>Design</h3></a></li>
+                          <li class="active"><a href="https://alannakoons.github.io/design"><h3>Design</h3></a></li>
                           <li><a href="#introduction"><h4>Introduction</h4></a></li>
                           <li><a href="#portfolio"><h4>Portfolio</h4></a></li>
                           <li><a href="#contact"><h4>Contact</h4></a></li>
@@ -92,20 +107,23 @@
               </div>
               <div class="col-md-10">
                   <div id="portfolio" class="row">
+                    <div class="portfolio-row">
                     <div class="col-xs-12">
-                        <div class="col-lg-6 col-md-4 col-xs-6">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/1081265/screenshots/2776073/46_-_delve.jpg" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-lg-6 col-md-4 col-xs-12">
+                            <img class="img-responsive clickable" src="../images/layered-specimen-preview.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">
                             
                             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                          <div class="row">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true" class="big-x">
                                                     &times;
                                                 </span>
                                             </button>
-                                            <div class="row text-center">
+                                          </div>
+                                          <div class="row text-center">
                                                 <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-20">
                                                     Previous
@@ -114,7 +132,7 @@
                                                 <div class="col-md-3">
                                                     <button type="button" class="btn btn-default piece-title">
                                                         <strong>
-                                                            Project Tiger
+                                                            Layered Specimen
                                                         </strong>
                                                     </button>
                                                 </div>
@@ -128,17 +146,24 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/1081265/screenshots/2776073/46_-_delve.jpg" alt="">
+                                                    <a href="../images/layered-specimen.jpg" target="_blank">
+                                                      <img class="img-responsive" src="../images/layered-specimen-fit.png" alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-md-pull-9">
                                                     <p>
-                                                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+                                                        Ink on tracing paper
+                                                    </p>
+                                                    <p>
+                                                        20" x 36"
                                                     </p>
                                                     <br>
                                                     <h4>
-                                                        <span class="boxed-in">
+                                                        <span class="boxed-in" data-dismiss="modal">
+                                                          <a href="#contact">
                                                             Ask me something
-                                                        </span>
+                                                            </a>
+                                                          </span>
                                                     </h4>
                                                 </div>
                                             </div>
@@ -158,18 +183,20 @@
                             </div>
                             
                         </div>
-                        <div class="col-lg-6 col-md-4 col-xs-6">
-                            <img class="img-responsive  clickable" src="https://d13yacurqjgara.cloudfront.net/users/1081265/screenshots/2705417/43_-_wor2.jpg" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-1">
+                        <div class="col-lg-6 col-md-4 col-xs-12">
+                            <img class="img-responsive  clickable" src="../images/specimen-12-preview.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-1">
                             
                             <div class="modal fade bs-example-modal-lg-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <div class="row">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true" class="big-x">
                                                     &times;
                                                 </span>
                                             </button>
+                                          </div>
                                             <div class="row text-center">
                                                 <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg">
@@ -179,7 +206,7 @@
                                                 <div class="col-md-3">
                                                     <button type="button" class="btn btn-default piece-title">
                                                         <strong>
-                                                            Pink Head!
+                                                            Specimen #12
                                                         </strong>
                                                     </button>
                                                 </div>
@@ -193,7 +220,9 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/1081265/screenshots/2705417/43_-_wor2.jpg" alt="">
+                                                  <a href="../images/specimen-12.jpg" target="_blank">
+                                                    <img class="img-responsive" src="../images/specimen-12-fit.png" alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-md-pull-9">
                                                     <p>
@@ -202,7 +231,9 @@
                                                     <br>
                                                     <h4>
                                                         <span class="boxed-in">
+                                                          <a href="#contact">
                                                             Ask me something
+                                                          </a>
                                                         </span>
                                                     </h4>
                                                 </div>
@@ -223,18 +254,20 @@
                             </div>
                             
                         </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/52084/screenshots/2501418/airluxxee_1x.jpg" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-2">
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <img class="img-responsive clickable" src="../images/specimen-15-thumbnail.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-2">
                             
                             <div class="modal fade bs-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <div class="row">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
+                                                <span aria-hidden="true" class="big-x">
                                                     &times;
                                                 </span>
                                             </button>
+                                          </div>
                                             <div class="row text-center">
                                                 <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-1">
@@ -244,7 +277,7 @@
                                                 <div class="col-md-3">
                                                     <button type="button" class="btn btn-default" style="border: solid 0px;">
                                                         <strong>
-                                                            Wemhoff Business Cards
+                                                            Specimen #15
                                                         </strong>
                                                     </button>
                                                 </div>
@@ -258,7 +291,9 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/52084/screenshots/2501418/airluxxee.jpg" alt="">
+                                                  <a href="../images/specimen-15.jpg" target="_blank">
+                                                    <img class="img-responsive" src="../images/specimen-15-fit.png" alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-md-pull-9">
                                                     <p>
@@ -288,18 +323,20 @@
                             </div>
                             
                         </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/72227/screenshots/628051/utopia.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-3">
+                        <div class="col-lg-4 col-md-4 col-xs-12" style="margin: 0px; padding: 0px;">
+                            <img class="img-responsive clickable" src="../images/specimen-5-thumbnail.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-3">
                             
                             <div class="modal fade bs-example-modal-lg-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <div class="row">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
+                                                <span aria-hidden="true" class="big-x">
                                                     &times;
                                                 </span>
                                             </button>
+                                          </div>
                                             <div class="row text-center">
                                                 <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-2">
@@ -309,7 +346,7 @@
                                                 <div class="col-md-3">
                                                     <button type="button" class="btn btn-default" style="border: solid 0px;">
                                                         <strong>
-                                                            Utopia Rebrand
+                                                            Specimen #5
                                                         </strong>
                                                     </button>
                                                 </div>
@@ -323,7 +360,9 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/72227/screenshots/628051/utopia.png" alt="">
+                                                    <a href="../images/specimen-5.jpg" target="_blank">
+                                                    <img class="img-responsive" src="../images/specimen-5-fit.png" alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-md-pull-9">
                                                     <p>
@@ -353,18 +392,20 @@
                             </div>
                             
                         </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/14268/screenshots/1934662/taptap_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-4">
+                        <div class="col-lg-4 col-md-4 col-xs-12" style="margin: 0px; padding: 0px;">
+                            <img class="img-responsive clickable" src="../images/specimen-7-thumbnail.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-4">
                             
                             <div class="modal fade bs-example-modal-lg-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <div class="row">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
+                                                <span aria-hidden="true" class="big-x">
                                                     &times;
                                                 </span>
                                             </button>
+                                          </div>
                                             <div class="row text-center">
                                                 <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-3">
@@ -374,7 +415,7 @@
                                                 <div class="col-md-3">
                                                     <button type="button" class="btn btn-default" style="border: solid 0px;">
                                                         <strong>
-                                                            Tap Logo
+                                                            Specimen #7
                                                         </strong>
                                                     </button>
                                                 </div>
@@ -388,7 +429,9 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/14268/screenshots/1934662/taptap.png" alt="">
+                                                  <a href="../images/specimen-7.png" target="_blank">
+                                                    <img class="img-responsive" src="../images/specimen-7-fit.png" alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-md-pull-9">
                                                     <p>
@@ -418,18 +461,20 @@
                             </div>
                             
                         </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/45617/screenshots/1935086/swiper_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-5">
+                        <div class="col-lg-6 col-md-4 col-xs-12" style="margin: 0px; padding: 0px;">
+                            <img class="img-responsive clickable" src="../images/specimen-9-preview.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-5">
                             
                             <div class="modal fade bs-example-modal-lg-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <div class="row">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
+                                                <span aria-hidden="true" class="big-x">
                                                     &times;
                                                 </span>
                                             </button>
+                                          </div>
                                             <div class="row text-center">
                                                 <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-4">
@@ -439,7 +484,7 @@
                                                 <div class="col-md-3">
                                                     <button type="button" class="btn btn-default" style="border: solid 0px;">
                                                         <strong>
-                                                            Swipe Logo
+                                                            Specimen #9
                                                         </strong>
                                                     </button>
                                                 </div>
@@ -453,7 +498,9 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/45617/screenshots/1935086/swiper.png" alt="">
+                                                  <a href="../images/specimen-9.png" target="_blank">
+                                                    <img class="img-responsive" src="../images/specimen-9-fit.png" alt="">
+                                                  </a>
                                                 </div>
                                                 <div class="col-md-3 col-md-pull-9">
                                                     <p>
@@ -483,18 +530,20 @@
                             </div>
                             
                         </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/61921/screenshots/1797138/dps2_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-6">
+                        <div class="col-lg-6 col-md-4 col-xs-12" style="margin: 0px; padding: 0px;">
+                            <img class="img-responsive clickable" src="../images/specimen-6-preview.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-6">
                             
                             <div class="modal fade bs-example-modal-lg-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <div class="row">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
+                                                <span aria-hidden="true" class="big-x">
                                                     &times;
                                                 </span>
                                             </button>
+                                          </div>
                                             <div class="row text-center">
                                                 <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-5">
@@ -504,917 +553,7 @@
                                                 <div class="col-md-3">
                                                     <button type="button" class="btn btn-default" style="border: solid 0px;">
                                                         <strong>
-                                                            Home Brochure
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-7">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/61921/screenshots/1797138/dps2.png" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-5">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-7">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/1081265/screenshots/2529191/11-bafta-covers_20163_1x.jpg" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-7">
-                            
-                            <div class="modal fade bs-example-modal-lg-7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-6">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Care Bears
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-8">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/1081265/screenshots/2529191/11-bafta-covers_20163.jpg" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-6">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-8">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/1719/screenshots/1231092/brochure_1x.jpg" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-8">
-                            
-                            <div class="modal fade bs-example-modal-lg-8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-7">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Orange Brochure
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-9">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/1719/screenshots/1231092/brochure.jpg" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-7">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-9">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-6 col-md-4 col-xs-6" style="margin: 0px; padding: 0px; background-color: #1FD3B6;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/259149/screenshots/1656985/profile-v2.gif" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-9">
-                            
-                            <div class="modal fade bs-example-modal-lg-9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-8">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Dribble App UX Design
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-10">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/259149/screenshots/1656985/profile-v2.gif" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-8">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-10">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-6 col-md-4 col-xs-6" style="margin: 0px; padding: 0px; background-color: #3498DB;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/259149/screenshots/1636996/posterized-shot_1x.jpg" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-10">
-                            
-                            <div class="modal fade bs-example-modal-lg-10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-9">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Posterize App Concept
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-11">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/259149/screenshots/1636996/posterized-shot.jpg" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-9">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-11">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/259149/screenshots/1631831/posterized-logo_1x.jpg" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-11">
-                            
-                            <div class="modal fade bs-example-modal-lg-11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-10">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Dribble Logo
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-12">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/259149/screenshots/1631831/posterized-logo.jpg" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-10">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-12">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/14268/screenshots/1378725/winefinder_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-12">
-                            
-                            <div class="modal fade bs-example-modal-lg-12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-11">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Wine Finder App
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-13">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/14268/screenshots/1378725/winefinder.png" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-11">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-13">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/25514/screenshots/1873731/movers-logo-design-branding-identity-ramotion_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-12">
-                            
-                            <div class="modal fade bs-example-modal-lg-13" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-12">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Movers Logo
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-14">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/25514/screenshots/1873731/movers-logo-design-branding-identity-ramotion.png" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-12">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-14">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/596193/screenshots/2910601/030-06_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-13">
-                            
-                            <div class="modal fade bs-example-modal-lg-14" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-13">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Relaxation Graphic
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-15">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/596193/screenshots/2910601/030-06.png" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-13">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-15">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/25514/screenshots/2825763/fitness_app_logo_design_ramotion_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-14">
-                            
-                            <div class="modal fade bs-example-modal-lg-15" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-14">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Running App Icon Concept
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-16">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/25514/screenshots/2825763/fitness_app_logo_design_ramotion.png" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-14">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-16">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/24465/screenshots/956381/pressed_dribbble_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-15">
-                            
-                            <div class="modal fade bs-example-modal-lg-16" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-15">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Tierney Print Logo
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-17">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/24465/screenshots/956381/pressed_dribbble.png" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-15">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-17">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/5025/screenshots/122060/shot_1299043105.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-16">
-                            
-                            <div class="modal fade bs-example-modal-lg-17" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-16">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Neighborhood Studio Branding
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-18">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/5025/screenshots/122060/shot_1299043105.png" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-16">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-18">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/108671/screenshots/1360987/key2.jpg" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-17">
-                            
-                            <div class="modal fade bs-example-modal-lg-18" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-17">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Trust Key Business Card
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-19">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/108671/screenshots/1360987/key2.jpg" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-17">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-19">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/747594/screenshots/2911576/the-monster_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-18">
-                            
-                            <div class="modal fade bs-example-modal-lg-19" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-18">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Pokemon Rule!
-                                                        </strong>
-                                                    </button>
-                                                </div>
-                                                <div class="col-sm-2 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-20">
-                                                    Next
-                                                </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/747594/screenshots/2911576/the-monster.png" alt="">
-                                                </div>
-                                                <div class="col-md-3 col-md-pull-9">
-                                                    <p>
-                                                        Different Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                                                    </p>
-                                                    <br>
-                                                    <h4>
-                                                        <span style="border: solid black; padding: 3px;">
-                                                            Ask me something
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer visible-sm visible-xs">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-18">
-                                                    Previous
-                                                </button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-20">
-                                                    Next
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-6" style="margin: 0px; padding: 0px;">
-                            <img class="img-responsive clickable" src="https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/2911192/hope_1x.png" alt="" type="button" data-toggle="modal" data-target=".bs-example-modal-lg-19">
-                            
-                            <div class="modal fade bs-example-modal-lg-20" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">
-                                                    &times;
-                                                </span>
-                                            </button>
-                                            <div class="row text-center">
-                                                <div class="col-sm-2 col-sm-offset-3 hidden-sm hidden-xs">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-19">
-                                                    Previous
-                                                </button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button type="button" class="btn btn-default" style="border: solid 0px;">
-                                                        <strong>
-                                                            Hope Poster
+                                                            Specimen #6
                                                         </strong>
                                                     </button>
                                                 </div>
@@ -1428,7 +567,9 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-9 col-md-push-3">
-                                                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/2911192/hope.png" alt="">
+                                                  <a href="../images/specimen-6.jpg" target="_blank">
+                                                    <img class="img-responsive" src="../images/specimen-6-fit.png" alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-md-pull-9">
                                                     <p>
@@ -1445,7 +586,7 @@
                                         </div>
                                         <div class="modal-footer visible-sm visible-xs">
                                             <div class="text-center">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-19">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg-5">
                                                     Previous
                                                 </button>
                                                 <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-lg">
@@ -1456,9 +597,9 @@
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                       </div>
+                  </div>
                   </div>
 
                   
