@@ -88,7 +88,7 @@ blockquote{
     background-color: rgba(255,255,255,0.0);
     border-radius: 0px;
     padding-left: 3px;
-    border-left: solid 2px black;
+    border-left: solid 2px #009688;
     color: black;
     -o-transition:.3s;
     -ms-transition:.3s;
