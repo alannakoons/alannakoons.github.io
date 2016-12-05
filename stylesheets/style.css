@@ -127,11 +127,8 @@
               margin-bottom: 0px;
               color: white;
               text-shadow: 2px 2px 10px rgba(0,0,0,.2);
-              font-family: 'Bitter', serif;
+              font-family: 'Libre Franklin', sans-serif;
           }
-.sub-hey p{
-    font-family: 'Libre Franklin', sans-serif;
-}
           #hey-button-left{
               float: right;
               border-radius: 40px;
