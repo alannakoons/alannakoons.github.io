@@ -33,83 +33,42 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
-    <script>
-        // Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
-      </script>
-      
       <link href="https://fonts.googleapis.com/css?family=Bitter|Libre+Franklin" rel="stylesheet">
       
     </head>
     <body data-spy="scroll" data-target="#myScrollspy" data-offset="0">
-        <div class="container-fluid">
-            <header class="nav-down">
+        <div class="container-fluid-art">
+                <header class="nav-down" id="art-nav">
                 <div class="row">
                     <div class="col-sm-4">
                         <a href="http://alannakoons.com">
-                            <h1>Alanna Koons</h1>
+                        <h1>Alanna Koons</h1>
                         </a>
                     </div>
                     <div class="col-xs-2 col-md-1 col-md-offset-3">
                             <h4>
-                                <a href="http://alannakoons.com#art">
+                                <a href="#art">
                                     Art
                                 </a>
                             </h4>
                         </div>
                         <div class="col-xs-3 col-sm-2 col-md-1">
                             <h4>
-                                <a href="http://alannakoons.com#design">
+                                <a href="#design">
                                     Design
                                 </a>
                             </h4>
                         </div>
                         <div class="col-xs-3 col-sm-2 col-md-1">
                             <h4>
-                                <a href="http://alannakoons.com#about">
+                                <a href="#about">
                                     About
                                 </a>
                             </h4>
                         </div>
                         <div class="col-xs-3 col-sm-2 col-md-1">
                             <h4>
-                                <a href="http://alannakoons.com#contact">
+                                <a href="#contact">
                                     Contact
                                 </a>
                             </h4>
