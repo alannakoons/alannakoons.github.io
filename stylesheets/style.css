@@ -107,7 +107,7 @@
               margin: 0 auto;
               background-image: url(http://alannakoons.com/images/yellow-background.jpg);
               background-attachment: fixed;
-              background-size: inherit;
+              background-size: cover;
               box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
           }
 #introduction{
