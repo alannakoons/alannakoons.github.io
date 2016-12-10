@@ -199,6 +199,9 @@ a {
               font-family: 'Libre Franklin', sans-serif;
               color: gray;
           }
+p, h4:hover{
+          color: black
+}
           #about img{
               max-width: 30vw;
               float: right;
