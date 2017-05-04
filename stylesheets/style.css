@@ -162,17 +162,17 @@
     -webkit-transition:.3s;
     transition:.3s;
 }         
-        #hey-button-right{
+       #hey-button-right{
               border-radius: 1px !important;
               display: block;
               margin: 0 auto;
-              background-color: rgba(0,0,0,0);
+              background-color: rgba(255,255,255,1);
               border-color: #FFFFFF;
               font-weight: 600;
               border-width: 4px;
               font-family: 'Raleway', sans-serif;
             letter-spacing: 2px;
-            color: #ffffff;
+            color: #bf2a26;
             -o-transition:.3s;
             -ms-transition:.3s;
             -moz-transition:.3s;
